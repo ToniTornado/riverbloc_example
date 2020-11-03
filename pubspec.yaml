@@ -11,9 +11,18 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # State Management
+  flutter_riverpod: ^0.12.1
+  flutter_bloc: ^6.0.6
+  riverbloc: ^0.1.2
+
 dev_dependencies:
+  pedantic: ^1.9.2
   flutter_test:
     sdk: flutter
+  
+dependency_overrides:
+  riverpod: any
 
 flutter:
   uses-material-design: true
