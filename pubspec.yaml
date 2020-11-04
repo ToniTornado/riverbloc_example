@@ -11,18 +11,32 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Networking
+  dio: ^3.0.10
+
   # State Management
+  freezed_annotation: ^0.12.0
   flutter_riverpod: ^0.12.1
   flutter_bloc: ^6.0.6
   riverbloc: ^0.1.2
+  state_notifier: ^0.6.0
 
 dev_dependencies:
-  pedantic: ^1.9.2
+  flutter_driver:
+    sdk: flutter
   flutter_test:
     sdk: flutter
+  mockito: ^4.1.1
+  random_string: ^2.0.0
+  test: any
+  pedantic: ^1.9.2
+  build_runner: ^1.10.4
+  freezed: ^0.12.2
+  json_serializable: ^3.5.0
   
 dependency_overrides:
-  riverpod: any
+  riverpod: any # Riverbloc does not yet require the latest version of Riverpod
+  analyzer: 0.40.4 # Fixes InconsistentAnalysisException exception on build
 
 flutter:
   uses-material-design: true
